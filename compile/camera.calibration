@@ -1,0 +1,8 @@
+Skeletool Camera Calibration File V1.0
+name 0
+  sensor 10 10
+  size 1920 1080
+  animated 0
+  intrinsic   1500.172 0 1017.387 0 0 1500.837 1043.032 0 0 0 1 0 0 0 0 1
+  extrinsic   1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1
+  radial 0

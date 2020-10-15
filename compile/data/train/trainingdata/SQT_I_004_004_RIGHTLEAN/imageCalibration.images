@@ -1,0 +1,5 @@
+Skeletool Images file v1.0
+cameras 1
+frames 58
+basepath data/train/trainingdata\SQT_I_004_004_RIGHTLEAN\\imageSequence
+images img_%06d.jpg

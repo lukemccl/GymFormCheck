@@ -1,0 +1,5 @@
+Skeletool Images file v1.0
+cameras 1
+frames 50
+basepath data/classify/SQT_C_004_001\\imageSequence
+images img_%06d.jpg

@@ -20,6 +20,6 @@ Classification:	 VTSC.exe <VideoFile.mp4>   <ModelFile.model>
 Training: 	 VTSC.exe <Video Directory> <Model Name>
 
 ---FURTHER---
-Due to licensing issues prohibiting redistribution, the VNect source files are unable to be included in this archive, 
+Due to licensing issues prohibiting redistribution, the VNect source or net files are unable to be included in this archive, 
 these can be requested from the researchers at:
 http://gvv.mpi-inf.mpg.de/projects/VNect/

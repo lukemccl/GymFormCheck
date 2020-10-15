@@ -1,0 +1,72 @@
+Camera: camera.calibration
+Skeleton: default_skel.skeleton
+InitMotion: init.motion
+NetProtoTxt: net/net.prototxt
+NetCaffeModel: net/model.caffemodel
+
+GPUnumber: 0
+DoTheLogging: false
+
+DebugMode: false
+
+//Scaling the skeleton, the number of frames to use for averaging 
+//call rescaleSkeleton() function for that;
+numberOfFramesToAverage: 10
+
+//initial bounding box 
+useInitialBbox: false
+bBoxUpLeft: 600, 0
+bBoxBottomRight: 1800, 2000
+
+
+InitThreshold: 0.5 // confidence that we detected the person reliably, after that we can enable all the filtering
+
+//Filters to use
+IKsmoothing: true
+3DFilter: true
+2DFilter: true
+DOFFilter: true
+
+
+//1Euro filter parameters
+Frequency: 30
+3D_mincutoff: 0.8
+3D_beta: 0.4
+3D_dcutoff: 1.0
+
+2D_mincutoff: 1.7
+2D_beta: 0.3
+2D_dcutoff: 1.0
+
+DOF_mincutoff: 20.0
+DOF_beta: 0.4
+DOF_dcutoff: 1.0
+
+//Bbox config
+BboxMomentum: 0.75
+
+//IK parameters
+DOFMomentum: 0.5 //motion prediction 
+2D_IKWeight: 44.0
+3D_IKWeight: 1.0
+3D_IKSmoothness: 0.07 // x,y,z 
+Z_IKSmoothness: 1.5 // only z
+
+//ceres solver params
+solver: ITERATIVE_SCHUR
+trust_region_strategy_type: LEVENBERG_MARQUARDT
+minimizer_type: TRUST_REGION
+use_nonmonotonic_steps: false
+num_threads: 1
+num_linear_solver_threads: 12
+function_tolerance: 1e-8
+parameter_tolerance: 1e-8
+max_solver_time_in_seconds: 0.0035
+minimizer_progress_to_stdout: false
+
+
+
+
+
+
+
